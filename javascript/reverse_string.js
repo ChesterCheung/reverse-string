@@ -1,5 +1,9 @@
 function reverseString(str) {
-  // type your code here
+    let reverseString = ""
+    for (let i = str.length - 1; i >=0; i--) {
+    reverseString += str[i]
+  }
+  return reverseString
 }
 
 if (require.main === module) {
@@ -15,5 +19,7 @@ if (require.main === module) {
 
 module.exports = reverseString;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+// take argument and determine length
+// take length and slice it starting from end
+// stop slicing when you hit 0
+// return value
